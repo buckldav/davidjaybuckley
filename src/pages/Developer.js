@@ -55,23 +55,37 @@ const Portfolio = {
 }
 
 const AppFeature = props => (
-  <section class="app-feature-section grid-container">
+  <section class="grid-container margin-vertical-1">
     <div class="grid-x grid-margin-x">
-      <div class="cell small-12 medium-4">
-        <div class="grid-container full show-for-medium">
+      <div class="cell small-12 medium-4 show-for-medium">
+        <div class="grid-container full">
           <img src="https://placehold.it/640x400" alt="" />
           <div class="grid-x">{props.data.tech}</div>
         </div>
       </div>
 
       <div class="cell small-12 medium-8">
-        <h4 class="app-feature-section-sub-header">{props.data.link}</h4>
-        <h3 class="app-feature-section-main-header">{props.data.header}</h3>
-        <div class="grid-container full hide-for-medium">
-          <img src="https://placehold.it/640x400" alt="" />
-          <div class="grid-x">{props.data.tech}</div>
+        <h4>{props.data.link}</h4>
+        <h3>{props.data.header}</h3>
+        <div class="grid-container full">
+          <img class="hide-for-medium" src="https://placehold.it/640x400" alt="" />
+          <div class="grid-x hide-for-medium">{props.data.tech}</div>
+          <div class="grid-x">
+            <div class="cell small-12 medium-6 app-detail-padding">
+              <h5>Summary</h5>
+              <p>This is a web hosting site that blah blah blah</p>
+            </div>
+            <div class="cell small-12 medium-6 app-detail-padding">
+              <h5>Features</h5>
+              <ul>
+                <li>User registration and login</li>
+                <li>Payment system with PayPal and Credit Card options</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="app-feature-section-features">
+        
+        {/* <div class="app-feature-section-features">
           <div class="app-feature-section-features-block">
             <FontAwesomeIcon icon={faSpaceShuttle} aria-hidden="true" />&nbsp;<span>Advanced</span>
           </div>
@@ -90,15 +104,15 @@ const AppFeature = props => (
           <div class="app-feature-section-features-block">
             <FontAwesomeIcon icon={faMobile} aria-hidden="true" />&nbsp;<span>Responsive</span>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   </section>
 )
 
 const Developer = () => (
-  <>
-    <section className="grid-container margin-1">
+  <main role="main">
+    <section className="grid-container margin-vertical-1">
       <div className="grid-x grid-margin-x">
         <div className="cell small-12">
           <h1>Developer</h1>
@@ -113,7 +127,7 @@ const Developer = () => (
     <AppFeature data={Portfolio} />
     <hr/>
     <Contact />
-  </>
+  </main>
 )
 
 export default Developer

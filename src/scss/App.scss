@@ -63,58 +63,28 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+main {
+  max-width: unset;
+
+  @include breakpoint(small only) {
+    max-width: 30em;
+    margin: 0 auto;
+  }
+}
+
 i {
   font-size: 30px;
 }
 
-.app-feature-section {
-  background-color: $white;
-  padding: $global-padding;
-
+.app-detail-padding {
   @include breakpoint(medium) {
-    padding: $global-padding*2;
+    padding-top: $global-padding;
+    padding-right: $global-padding;
   }
 }
 
-// .app-feature-section-main-header {
-//   @include breakpoint(medium down) {
-//     font-size: 30px;
-//   }
-// }
-
-// .app-feature-section-sub-header {
-//   margin-bottom: 0;
-
-//   @include breakpoint(medium down) {
-//     font-size: 24px;
-//   }
-// }
-
-.app-feature-section-features {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.app-feature-section-features-block {
-  display: flex;
-  align-items: center;
-  padding: $global-padding 0;
-  flex: 1 0 33.33%;
-  white-space: nowrap;
-
-  .fa {
-    margin-right: 1rem;
-    font-size: 35px;
-  }
-
+.app-detail-padding:nth-child(even) {
   @include breakpoint(small only) {
-    flex: 1 0 50%;
-    justify-content: center;
-  }
-
-  @media screen and (max-width: 25.9375em) {
-    flex: 1 0 100%;
-    justify-content: center;
+    padding-bottom: $global-padding*2;
   }
 }
