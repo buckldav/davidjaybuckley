@@ -1,0 +1,36 @@
+// https://foundation.zurb.com/sites/docs/sass.html#
+@import '../../node_modules/foundation-sites/scss/util/util';
+@import '../../node_modules/foundation-sites/scss/global';
+
+@include add-foundation-colors;
+
+// Fonts
+$header-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+sans-serif !default;
+$body-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+sans-serif !default;
+$font-family-monospace: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+monospace;
+
+// Colors
+$foundation-palette: (
+  primary: #2B79E5,
+  secondary: #380B55,
+  success: #00C100,
+  warning: #FFE644,
+  alert: #E01A4F,
+);
+$light-gray: #e6e6e6;
+$medium-gray: #cacaca;
+$dark-gray: #8a8a8a;
+$black: #0a0a0a;
+$white: #fefefe;
+
+// Components
+$offcanvas-shadow: 0 0 10px rgba($black, 0);
+$offcanvas-inner-shadow-color: rgba($black, 0);
+$offcanvas-background: $white;
+
+$titlebar-background: get-color(secondary);
