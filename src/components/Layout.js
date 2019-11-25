@@ -17,7 +17,12 @@ class Layout extends React.Component {
               <br/>
               <img className="thumbnail" src="https://placehold.it/550x350" alt="placeholder"/>
               <h5>David Buckley</h5>
-              <p>Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed molestie augue sit amet leo.</p>
+              <p>I love learning new things in technology and music and sharing them with people, so that's what I do! View my projects and portfolios for each of my passions below.</p>
+              <nav id="nav-links" className="grid-y">
+                <a href="/developer">Web Developer</a>
+                <a href="/musician">Jazz Musician</a>
+                <a href="/teacher">High School Teacher</a>
+              </nav>
             </div>
           </div>
           <div className="off-canvas-content" data-off-canvas-content>

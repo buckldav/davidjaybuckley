@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Contact = props => (
-  <section className="grid-container margin-1 margin-top-2">
+  <section className="grid-container margin-top-2">
     <div className="grid-x grid-margin-x">
       <div className="cell small-12 medium-6">
         <h3>Contact Me</h3>
