@@ -1,4 +1,6 @@
 @import './settings';
+@import './landing';
+@import './logo';
 @import '../../node_modules/foundation-sites/scss/foundation.scss';
 
 
@@ -58,7 +60,7 @@
 @include foundation-prototype-classes;
 
 body {
-  margin: 0;
+  font-family: $main-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -76,6 +78,26 @@ i {
   font-size: 30px;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  color: $black;
+}
+
+.accent-text {
+  color: get-color(accent) !important;
+}
+
+.white-text {
+  color: $white !important;
+}
+
+.xs-text {
+  font-size: 12px !important;
+}
+
 .app-detail-padding {
   @include breakpoint(medium) {
     padding-top: $global-padding;
@@ -87,4 +109,9 @@ i {
   @include breakpoint(small only) {
     padding-bottom: $global-padding*2;
   }
+}
+
+.off-canvas {
+  background: get-color(secondary);
+  color: $white;
 }

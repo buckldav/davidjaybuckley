@@ -16,9 +16,10 @@ class Layout extends React.Component {
             <div className="grid-container">
               <br/>
               <img className="thumbnail" src="https://placehold.it/550x350" alt="placeholder"/>
-              <h5>David Buckley</h5>
-              <p>I love learning new things in technology and music and sharing them with people, so that's what I do! View my projects and portfolios for each of my passions below.</p>
+              <h1 className="h5"><a className="white-text" href="/">David Buckley</a></h1>
+              <p>Lifetime Utahn.<br/>Ultimate Frisbee lover.<br/>Trying to do three careers at once.</p>
               <nav id="nav-links" className="grid-y">
+                <span className="xs-text">I am a...</span>
                 <a href="/developer">Web Developer</a>
                 <a href="/musician">Jazz Musician</a>
                 <a href="/teacher">High School Teacher</a>

@@ -33,7 +33,7 @@ const MeritAcademy = {
   features: [
     <li>React.js + REST API + Django + Heroku</li>,
     <li>Data models, relational database using PostgreSQL</li>,
-    <li>Responsive design using ant.design and .less variables</li>,
+    <li>Responsive design using <a target="_blank" rel="noopener noreferrer" href="https://ant.design">ant.design</a> and .less variables</li>,
   ]
 }
 
@@ -48,7 +48,7 @@ const HandMeDown = {
   summary: <>Hand-Me-Down Experience is a WordPress travel blog. I created their WP Theme from scratch using PHP and helped them lower their costs and dependencies on third parties.</>,
   features: [
     <li>PHP backend configuration for WordPress</li>,
-    <li>Custom responsive CSS built on _underscore</li>,
+    <li>Custom responsive theme built on <a target="_blank" rel="noopener noreferrer" href="https://underscores.me/">underscores</a></li>,
     <li>Search Engine Optimization</li>,
   ]
 }
@@ -64,7 +64,7 @@ const TheGuests = {
   features: [
     <li>Custom HTML5 video player</li>,
     <li>Serverless contact form</li>,
-    <li>Netlify static hosting, Zoho email</li>,
+    <li><a target="_blank" rel="noopener noreferrer" href="https://www.netlify.com/">Netlify</a> static hosting, <a target="_blank" rel="noopener noreferrer" href="https://www.zoho.com/">Zoho</a> email</li>,
     <li>Responsive design using SCSS</li>,
   ]
 }
@@ -96,19 +96,19 @@ const AppFeature = props => (
 
       <div class="cell small-12 medium-8">
         <h4>{props.data.link}</h4>
-        <h3>{props.data.header}</h3>
+        <h3 className="accent-text">{props.data.header}</h3>
         <div class="grid-container full">
           <img class="hide-for-medium" src="https://placehold.it/640x400" alt="" />
           <div class="grid-x hide-for-medium">{props.data.tech}</div>
           <div class="grid-x">
             <div class="cell small-12 medium-6 app-detail-padding">
-              <h5>Features I Implemented</h5>
+              <h5 className="subheader">Features I Implemented</h5>
               <ul>
                 {props.data.features.map(val => val)}
               </ul>
             </div>
             <div class="cell small-12 medium-6 app-detail-padding">
-              <h5>Summary</h5>
+              <h5 className="subheader">Summary</h5>
               <p>{props.data.summary}</p>
             </div>
           </div>
@@ -123,7 +123,7 @@ const Developer = () => (
     <section className="grid-container margin-vertical-1">
       <div className="grid-x grid-margin-x">
         <div className="cell small-12">
-          <h1>Web Developer</h1>
+          <h1 className="accent-text">Web Developer</h1>
           <p>
             <span className="show-for-medium">After graduating from BYU in Physics Teaching with a minor in CS Teaching, I learned the internet and now I'm a junior full-stack dev.<br/></span>
             <span>Here are some things I've made.</span>
