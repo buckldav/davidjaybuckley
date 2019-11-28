@@ -30,7 +30,7 @@ class Layout extends React.Component {
             <div className="title-bar hide-for-large">
               <div className="title-bar-left">
                 <button className="menu-icon" type="button" data-open="my-info"></button>
-                <span className="title-bar-title">David Buckley</span>
+                <span className="title-bar-title padding-left-1">David Buckley</span>
               </div>
             </div>
             {this.props.children}

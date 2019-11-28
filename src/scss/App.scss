@@ -35,7 +35,7 @@
 // Containers
 // @include foundation-accordion;
 @include foundation-media-object;
-@include foundation-orbit;
+// @include foundation-orbit;
 @include foundation-responsive-embed;
 @include foundation-tabs;
 @include foundation-thumbnail;
@@ -59,19 +59,14 @@
 @include foundation-visibility-classes;
 @include foundation-prototype-classes;
 
+// Global
+$z-index-menu: 10;
+$top-menu-height: 3.5rem;
+
 body {
   font-family: $main-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-main {
-  max-width: unset;
-
-  @include breakpoint(small only) {
-    max-width: 30em;
-    margin: 0 auto;
-  }
 }
 
 i {
@@ -98,6 +93,33 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-size: 12px !important;
 }
 
+.off-canvas {
+  background: get-color(secondary);
+  color: $white;
+}
+
+.off-canvas-content {
+  position: relative;
+}
+
+.off-canvas-content .title-bar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: $top-menu-height;
+  z-index: $z-index-menu;
+}
+
+// Developer
+main#developer {
+  max-width: unset;
+
+  @include breakpoint(small only) {
+    max-width: 30em;
+    margin: 0 auto;
+  }
+}
+
 .app-detail-padding {
   @include breakpoint(medium) {
     padding-top: $global-padding;
@@ -111,7 +133,55 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   }
 }
 
-.off-canvas {
-  background: get-color(secondary);
-  color: $white;
+// Musician
+main#musician {
+  position: relative;
+  nav {
+    position: sticky;
+    top: 0;
+    background: $white;
+    z-index: $z-index-menu;
+    
+    @include breakpoint(medium down) {
+      top: $top-menu-height;
+    }
+  }
 }
+
+$masonry-css-column-gap: $global-margin;
+
+.masonry-css {
+  column-count: 1;
+  column-gap: $masonry-css-column-gap;
+
+  @include breakpoint(small) {
+    column-count: 1;
+  }
+
+  @include breakpoint(450px) {
+    column-count: 2;
+  }
+
+  @include breakpoint(650px) {
+    column-count: 3;
+  }
+
+  @include breakpoint(850px) {
+    column-count: 4;
+  }
+
+  @include breakpoint(1024px) {
+    column-count: 3;
+  }
+
+  @include breakpoint(1200px) {
+    column-count: 4;
+  }
+}
+
+.masonry-css-item {
+  break-inside: avoid;
+  margin-bottom: $masonry-css-column-gap;
+}
+
+

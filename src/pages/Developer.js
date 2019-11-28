@@ -119,7 +119,7 @@ const AppFeature = props => (
 )
 
 const Developer = () => (
-  <main role="main">
+  <main role="main" id="developer">
     <section className="grid-container margin-vertical-1">
       <div className="grid-x grid-margin-x">
         <div className="cell small-12">
