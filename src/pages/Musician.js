@@ -4,8 +4,12 @@ import Contact from '../components/Contact'
 const MusicGrid = props => (
   <div className="masonry-css">
     <div className="masonry-css-item">
-      <iframe title="soundcloud" width="100%" height="400" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/4766862&amp;color=%234b3f72&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=false"></iframe>
-      <div className="callout">I'm just another introverted music theory nut who produces stuff out of the bedroom and chucks it up on Soundcloud.</div>
+      <iframe title="soundcloud" width="100%" height="400" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/4766862&amp;color=%234b3f72&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=false"></iframe>      
+      <div className="callout">
+        <h5 className="subheading">Production</h5>
+        <p>I'm just another introverted music theory nut who produces stuff out of the bedroom and chucks it up on Soundcloud. 
+        I track live bass, guitar, and keys for people.</p>
+      </div>
     </div>
     <div className="masonry-css-item">
       <img src={window.location.origin + "/img/music/bass-roc.jpg"} width="100%" alt="BYU ROC band"/>
@@ -23,11 +27,12 @@ const MusicGrid = props => (
     </div>
     <div className="masonry-css-item">
       <div className="callout">
-        <h5>My Story</h5>
-        I had enjoyed singing in choirs and doing piano lessons as a kid, but once I started driving my own music education, I really got into it. 
-      Listening to Boston's More Than a Feeling when I was 13 forced me to pick up a guitar. 
-      In high school, an unique opportunity allowed me to join the top jazz band midway through the year on piano, rekindling my love for the instrument. 
-      Nowadays, I mostly play bass because that's where the gigs are fam.</div>
+        <h5 className="subheading">My Story</h5>
+        <p>I had enjoyed singing in choirs and doing piano lessons as a kid, but once I started driving my own music education, I really got into it. 
+        Listening to Boston's "More Than a Feeling" when I was 13 forced me to pick up a guitar. 
+        In high school, an unique opportunity allowed me to join the top jazz band midway through the year on piano, rekindling my love for the instrument. 
+        Nowadays, I mostly play bass because that's where the gigs are fam.</p>
+      </div>
     </div>
     <div className="masonry-css-item">
       <img src={window.location.origin + "/img/music/mjo.jpg"} width="100%" alt="David Buckley - Jazz Guitarist"/>
@@ -43,8 +48,11 @@ const MusicGrid = props => (
     <div className="masonry-css-item">
       <img src={window.location.origin + "/img/music/mjo-group.jpg"} width="100%" alt="Mountainside Jazz Orchestra"/>
       <div className="callout">
-        I've been writing and arranging songs for over ten years now and I've learned a lot along the way. 
-        I love making big band arrangements and teaching Jazz Band at Merit Academy lets me arrange tunes frequently. Check out my arrangements <a href="/music/arrangements">here</a>.
+        <h5 className="subheading">Arranging</h5>
+        <p>I've been writing and arranging songs for over ten years now and I've learned a lot along the way. 
+        I love making big band arrangements and teaching Jazz Band at Merit Academy lets me arrange tunes frequently. 
+        I also make arrangements for choirs and ensembles, especially for religious performances.
+        Check out my arrangements <a href="/music/arrangements">here</a>.</p>
       </div>
     </div>
     <div className="masonry-css-item">

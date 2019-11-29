@@ -17,7 +17,7 @@ class Layout extends React.Component {
               <br/>
               <img className="thumbnail" src="https://placehold.it/550x350" alt="placeholder"/>
               <h1 className="h5"><a className="white-text" href="/">David Buckley</a></h1>
-              <p>Lifetime Utahn.<br/>Ultimate Frisbee lover.<br/>Trying to do three careers at once.</p>
+              <p>Family Man.<br/>Lifetime Utahn.<br/>Ultimate Frisbee lover.<br/>Trying to do three careers at once.</p>
               <nav id="nav-links" className="grid-y">
                 <span className="xs-text">I am a...</span>
                 <a href="/developer">Web Developer</a>

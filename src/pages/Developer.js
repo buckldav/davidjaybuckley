@@ -125,8 +125,7 @@ const Developer = () => (
         <div className="cell small-12">
           <h1 className="accent-text">Web Developer</h1>
           <p>
-            <span className="show-for-medium">After graduating from BYU in Physics Teaching with a minor in CS Teaching, I learned the internet and now I'm a junior full-stack dev.<br/></span>
-            <span>Here are some things I've made.</span>
+            <span>Django and React.js are pretty fun.</span>
           </p>
         </div>
       </div>
