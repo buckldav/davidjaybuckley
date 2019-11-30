@@ -1,7 +1,7 @@
 import React from 'react'
 import Contact from '../components/Contact'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCode, faGraduationCap, faGlobeAsia, faMagnet, faBolt, faHandsHelping, faFlask, faUsers, faFire, faSchool, faUserGraduate, faChalkboardTeacher, faGuitar } from '@fortawesome/free-solid-svg-icons'
+import { faCode, faGraduationCap, faGlobeAsia, faBolt, faHandsHelping, faFlask, faUsers, faFire, faSchool, faUserGraduate, faChalkboardTeacher, faGuitar } from '@fortawesome/free-solid-svg-icons'
 
 
 const TimelineItem = props => {

@@ -4,6 +4,7 @@ import Contact from '../components/Contact'
 const iconClasses = icon => (icon + " cell small-2 medium-4 large-auto padding-vertical-1 text-center")
 
 const SpringMicro = {
+  imgPath: "/img/dev/springmicro.png",
   link: <a href="https://springmicro.com">springmicro.com</a>,
   header: <>SpringMicro</>, 
   tech: <>
@@ -22,6 +23,7 @@ const SpringMicro = {
 }
 
 const MeritAcademy = {
+  imgPath: "/img/dev/meritacademy.png",
   link: <a href="https://meritacademy.tech">meritacademy.tech</a>,
   header: <>Merit Academy Technology</>, 
   tech: <>
@@ -38,6 +40,7 @@ const MeritAcademy = {
 }
 
 const HandMeDown = {
+  imgPath: "/img/dev/hmde.png",
   link: <a href="https://handmedownexperience.com">handmedownexperience.com</a>,
   header: <>Hand-Me-Down Experience</>, 
   tech: <>
@@ -54,6 +57,7 @@ const HandMeDown = {
 }
 
 const TheGuests = {
+  imgPath: "/img/dev/theguests.png",
   link: <a href="https://theguests.band">theguests.band</a>,
   header: <>The Guests</>, 
   tech: <>
@@ -70,13 +74,16 @@ const TheGuests = {
 }
 
 const Portfolio = {
+  imgPath: "/img/dev/this.png",
   link: <a href="https://davidbuckley.me">davidbuckley.me</a>,
   header: <>My Portfolio</>, 
   tech: <>
           <i className={iconClasses("devicon-react-original-wordmark")}></i><i className={iconClasses("devicon-sass-original")}></i>
           <i className={iconClasses("devicon-foundation-plain-wordmark")}></i>
         </>,
-  summary: <>The site you see here!</>,
+  summary: <pre>
+def get_summary(self):<br/>
+&nbsp;&nbsp;return self</pre>,
   features: [
     <li>Serverless contact form</li>,
     <li>Netlify static hosting</li>,
@@ -85,29 +92,29 @@ const Portfolio = {
 }
 
 const AppFeature = props => (
-  <section class="grid-container margin-vertical-1">
-    <div class="grid-x grid-margin-x">
-      <div class="cell small-12 medium-4 show-for-medium">
-        <div class="grid-container full">
-          <img src="https://placehold.it/640x400" alt="" />
-          <div class="grid-x">{props.data.tech}</div>
+  <section className="grid-container margin-top-1 margin-bottom-2">
+    <div className="grid-x grid-margin-x">
+      <div className="cell small-12 medium-4 show-for-medium">
+        <div className="grid-container full">
+          <img className="shadow" src={window.location.origin + props.data.imgPath} alt={props.data.header} />
+          <div className="grid-x">{props.data.tech}</div>
         </div>
       </div>
 
-      <div class="cell small-12 medium-8">
+      <div className="cell small-12 medium-8">
         <h4>{props.data.link}</h4>
         <h3 className="accent-text">{props.data.header}</h3>
-        <div class="grid-container full">
-          <img class="hide-for-medium" src="https://placehold.it/640x400" alt="" />
-          <div class="grid-x hide-for-medium">{props.data.tech}</div>
-          <div class="grid-x">
-            <div class="cell small-12 medium-6 app-detail-padding">
+        <div className="grid-container full">
+          <img className="shadow hide-for-medium" src={window.location.origin + props.data.imgPath} alt={props.data.header} />
+          <div className="grid-x hide-for-medium">{props.data.tech}</div>
+          <div className="grid-x">
+            <div className="cell small-12 medium-6 app-detail-padding">
               <h5 className="subheader">Features I Implemented</h5>
               <ul>
                 {props.data.features.map(val => val)}
               </ul>
             </div>
-            <div class="cell small-12 medium-6 app-detail-padding">
+            <div className="cell small-12 medium-6 app-detail-padding">
               <h5 className="subheader">Summary</h5>
               <p>{props.data.summary}</p>
             </div>

@@ -94,6 +94,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-size: 12px !important;
 }
 
+.margin-horizontal-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .off-canvas {
   background: get-color(secondary);
   color: $white;
@@ -231,12 +236,6 @@ $timeline-item-card-radius: $global-radius;
   a {
     color: $timeline-item-font-color;
     font-weight: bold;
-    transition: $timeline-transition;
-
-    &:hover {
-      box-shadow: 0 1px 0px 0px $timeline-item-font-color;
-      transition: $timeline-transition;
-    }
   }
 
   .timeline-item {
@@ -255,16 +254,12 @@ $timeline-item-card-radius: $global-radius;
       position: absolute;
       top: 0;
       width: 50px;
+      text-align: center;
 
-      img,
       svg {
-        left: 14px;
         position: relative;
-        top: 11px;
-      }
-
-      svg {
         top: 14px;
+        margin: auto;
       }
     }
 

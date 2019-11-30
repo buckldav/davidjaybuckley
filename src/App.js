@@ -7,6 +7,8 @@ import Developer from './pages/Developer';
 import Musician from './pages/Musician';
 import Teacher from './pages/Teacher';
 import Layout from './components/Layout';
+import MusicLessons from './pages/music/Lessons';
+import MusicArrangements from './pages/music/Arrangements';
 
 const RouteWithLayout = ({layout, component, ...rest}) => (
   <Route {...rest} render={(props) =>
@@ -23,6 +25,8 @@ function App() {
         <RouteWithLayout layout={Layout} exact path="/developer" component={Developer} />
         <RouteWithLayout layout={Layout} exact path="/teacher" component={Teacher} />
         <RouteWithLayout layout={Layout} exact path="/musician" component={Musician} />
+        <RouteWithLayout layout={Layout} exact path="/music/lessons" component={MusicLessons} />
+        <RouteWithLayout layout={Layout} exact path="/music/arrangements" component={MusicArrangements} />
       </Switch>
     </BrowserRouter>
   );

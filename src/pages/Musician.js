@@ -31,7 +31,7 @@ const MusicGrid = props => (
         <p>I had enjoyed singing in choirs and doing piano lessons as a kid, but once I started driving my own music education, I really got into it. 
         Listening to Boston's "More Than a Feeling" when I was 13 forced me to pick up a guitar. 
         In high school, an unique opportunity allowed me to join the top jazz band midway through the year on piano, rekindling my love for the instrument. 
-        Nowadays, I mostly play bass because that's where the gigs are fam.</p>
+        Nowadays, I mostly play bass because that's where the gigs are.</p>
       </div>
     </div>
     <div className="masonry-css-item">
