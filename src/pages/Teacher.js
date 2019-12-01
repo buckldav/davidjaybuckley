@@ -1,7 +1,7 @@
 import React from 'react'
 import Contact from '../components/Contact'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCode, faGraduationCap, faGlobeAsia, faBolt, faHandsHelping, faFlask, faUsers, faFire, faSchool, faUserGraduate, faChalkboardTeacher, faGuitar } from '@fortawesome/free-solid-svg-icons'
+import { faCode, faGraduationCap, faGlobeAsia, faBolt, faHandsHelping, faFlask, faUsers, faFire, faSchool, faUserGraduate, faChalkboardTeacher, faGuitar, faUniversity, faCertificate, faListUl } from '@fortawesome/free-solid-svg-icons'
 
 
 const TimelineItem = props => {
@@ -138,6 +138,40 @@ const TeacherTimeline = () => (
   </div>
 )
 
+const TeacherSkills = () => (
+  <div class="text-center">
+    <h3 class="accent-text text-left margin-bottom-2">Skills and Qualifications</h3>
+    <div class="grid-x grid-x-margin">
+      <div class="small-12 medium-4 columns">
+        <FontAwesomeIcon icon={faUniversity} />
+        <h4 class="marketing-site-three-up-title">Education</h4>
+        <p className="h5">Brigham Young University<br/><span className="text-xs">April 2018</span></p>
+        <p className="margin-vertical-0">BS Physics Teaching<br/><span className="text-xs">GPA: 3.6, Academic Scholarship, Regents Scholarship</span></p>
+        <p>Computer Science Teaching Minor<br/><span className="text-xs">GPA: 3.95</span></p>
+      </div>
+      <div class="small-12 medium-4 columns">
+        <FontAwesomeIcon icon={faCertificate} />
+        <h4 class="marketing-site-three-up-title">Certifications</h4>
+        <p className="h5">USOE Endorsements</p>
+        <ul className="list-style-none">
+          <li>Secondary Education</li>
+          <li>Computer Science Level 2</li>
+          <li>Physics</li>
+        </ul>
+      </div>
+      <div class="small-12 medium-4 columns">
+        <FontAwesomeIcon icon={faListUl} />
+        <h4 class="marketing-site-three-up-title">Notables</h4>
+        <ul className="list-style-none">
+          <li>5 years of experience teaching STEM</li>
+          <li>2 years of experience teaching private music lessons</li>
+          <li>Developed curricula for over 10 different courses</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+)
+
 const Teacher = () => (
   <main role="main" id="teacher">
     <section className="grid-container margin-top-1">
@@ -149,6 +183,9 @@ const Teacher = () => (
           </p>
         </div>
       </div>
+    </section>
+    <section className="grid-container margin-vertical-1">
+      <TeacherSkills />
     </section>
     <section className="grid-container margin-vertical-1">
       <TeacherTimeline />

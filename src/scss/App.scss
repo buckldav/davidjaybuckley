@@ -90,8 +90,14 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   color: $white !important;
 }
 
-.xs-text {
+.text-xs {
   font-size: 12px !important;
+}
+
+.list-style-none {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .margin-horizontal-auto {
@@ -191,6 +197,7 @@ $masonry-css-column-gap: $global-margin;
 }
 
 // Teacher
+// Timeline
 $timeline-color: get-color(primary);
 $timeline-transition: all 0.25s ease-in;
 $timeline-item-card-bg: $white;
@@ -208,7 +215,6 @@ $timeline-item-card-radius: $global-radius;
   }
 }
 
-// Timeline
 .timeline {
   margin: 30px auto;
   padding: 0 10px;
