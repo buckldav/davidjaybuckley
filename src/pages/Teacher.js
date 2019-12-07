@@ -230,7 +230,11 @@ const Teacher = () => (
       <TeacherTimeline />
     </section>
     <hr/>
-    <Contact />
+    <Contact
+      subject="Teacher"
+      placeholder="Ask me anything"
+      message="Get in touch with me about teaching, tutoring, or anything related."
+    />
   </main>
 )
 

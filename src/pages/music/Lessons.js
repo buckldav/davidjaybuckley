@@ -31,7 +31,12 @@ const MusicLessons = () => (
       <LessonsInfo />
     </section>
     <hr/>
-    <Contact />
+    <Contact 
+      subject="Music Lessons"
+      placeholder="Want to learn my favorite polychords?"
+      message="Get in touch with me if you'd like to know more about music lessons and pricing. I teach all over Utah County and I'll come to you or you can come to my studio in Provo."
+      button2={<a target="_blank" rel="noopener noreferrer" href="https://soundcloud.com/buckldav">SoundCloud</a>}
+    />
   </main>
 )
 

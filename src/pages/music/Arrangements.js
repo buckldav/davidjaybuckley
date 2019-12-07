@@ -29,7 +29,12 @@ const MusicArrangements = () => (
       <Charts />
     </section>
     <hr/>
-    <Contact />
+    <Contact 
+      subject="Music Arrangements"
+      placeholder="Message"
+      message="Get in touch with me if you'd like to commission an arrangement."
+      button2={<a target="_blank" rel="noopener noreferrer" href="https://soundcloud.com/buckldav">SoundCloud</a>}
+    />
   </main>
 )
 

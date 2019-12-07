@@ -85,7 +85,12 @@ const Musician = () => (
       <MusicGrid />
     </section>
     <hr/>
-    <Contact />
+    <Contact 
+      subject="Musician"
+      placeholder="Tell me an obscure 70's band"
+      message="Get in touch with me if you'd like to know more about music, production, or best of all, hire me for a gig!"
+      button2={<a target="_blank" rel="noopener noreferrer" href="https://soundcloud.com/buckldav">SoundCloud</a>}
+    />
   </main>
 )
 

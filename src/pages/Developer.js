@@ -143,7 +143,11 @@ const Developer = () => (
     <AppFeature data={TheGuests} />
     <AppFeature data={Portfolio} />
     <hr/>
-    <Contact />
+    <Contact
+      subject="Development"
+      placeholder="Message"
+      message="Get in touch if you'd like to commission me for a site/app or ask any other questions."
+    />
   </main>
 )
 
