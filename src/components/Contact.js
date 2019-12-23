@@ -1,5 +1,7 @@
 import React from 'react'
 import isEmail from 'validator/lib/isEmail';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone, faEnvelope, faLink } from '@fortawesome/free-solid-svg-icons';
 
 const encode = (data) => {
   return Object.keys(data)
@@ -63,19 +65,21 @@ class ContactForm extends React.Component {
             <textarea rows={4} name="message" value={message} placeholder={this.props.placeholder} onChange={this.handleChange} />
           </label>
         </p>
-        <p>
-          <button type="submit" className="button expanded" disabled={isDisabled()}>Submit</button>
-        </p>
+        <button type="submit" className="button expanded margin-0" disabled={isDisabled()}>Submit</button>
       </form>
     );
   }
 }
 
 const Contact = props => (
-  <section id="contact" className="grid-container margin-top-2">
+  <section id="contact" className="grid-container margin-vertical-2">
     <div className="grid-x grid-margin-x">
       <div className="cell small-12 medium-6">
         <h3 className="accent-text">Contact Me</h3>
+        <p className="show-for-medium">
+          My name is David Buckley and I'm passionate about what I do. I've never felt like I could be put in a box.
+          I've just spent my time pursuing what I love and seeing where it takes me.
+        </p>
         <p>{props.message}</p>
         <ul className="menu">
           <li><a href="https://www.linkedin.com/in/buckldav">LinkedIn</a></li>
@@ -89,6 +93,7 @@ const Contact = props => (
         />
       </div>
     </div>
+    <h6 className="subheader text-center margin-vertical-2">&copy; David Buckley 2019</h6>
   </section>
 )
 

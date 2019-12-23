@@ -23,6 +23,7 @@ class Layout extends React.Component {
                 <a className="top-nav" href="/developer">Web Developer</a>
                 <a className="top-nav" href="/musician">Jazz Musician</a>
                 <a className="top-nav" href="/teacher">High School Teacher</a>
+                <a className="top-nav margin-top-1" href={window.location.href.split("#")[0] + "#contact"}>Contact Me</a>
               </nav>
             </div>
           </div>
