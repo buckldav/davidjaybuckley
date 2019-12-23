@@ -4,27 +4,26 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCode, faGraduationCap, faGlobeAsia, faBolt, faHandsHelping, faFlask, faUsers, faFire, faSchool, faUserGraduate, faChalkboardTeacher, faGuitar, faUniversity, faCertificate, faListUl } from '@fortawesome/free-solid-svg-icons'
 
 const TeacherSkills = () => (
-  <div class="text-center">
-    <h3 class="accent-text text-left margin-bottom-2">Skills and Qualifications</h3>
-    <div class="grid-x grid-x-margin">
-      <div class="small-12 medium-4 columns">
+  <div className="text-center">
+    <h3 className="accent-text text-left margin-bottom-2">Skills and Qualifications</h3>
+    <div className="grid-x grid-x-margin">
+      <div className="small-12 medium-4 columns margin-bottom-2">
         <FontAwesomeIcon icon={faUniversity} />
         <h4>Education</h4>
         <p className="h5">Brigham Young University<br/><span className="text-xs">April 2018</span></p>
         <p className="margin-vertical-0">BS Physics Teaching<br/><span className="text-xs">GPA: 3.6, Academic Scholarship, Regents Scholarship</span></p>
-        <p>Computer Science Teaching Minor<br/><span className="text-xs">GPA: 3.95</span></p>
+        <p className="margin-vertical-0">Computer Science Teaching Minor<br/><span className="text-xs">GPA: 3.95</span></p>
       </div>
-      <div class="small-12 medium-4 columns">
+      <div className="small-12 medium-4 columns margin-bottom-2">
         <FontAwesomeIcon icon={faCertificate} />
-        <h4>Certifications</h4>
-        <p className="h5">USOE Endorsements</p>
+        <h4>USOE Endorsements</h4>
         <ul className="list-style-none">
           <li>Secondary Education</li>
           <li>Computer Science Level 2</li>
           <li>Physics</li>
         </ul>
       </div>
-      <div class="small-12 medium-4 columns">
+      <div className="small-12 medium-4 columns margin-bottom-2">
         <FontAwesomeIcon icon={faListUl} />
         <h4>Notables</h4>
         <ul className="list-style-none">
@@ -39,12 +38,12 @@ const TeacherSkills = () => (
 )
 
 const TeacherPositions = () => (
-  <div class="text-left">
-    <h3 class="accent-text text-left margin-bottom-1">Current Positions</h3>
+  <div className="text-left">
+    <h3 className="accent-text text-left margin-bottom-1">Current Positions</h3>
     <div className="grid-x grid-x-margin">
       <div className="small-12 medium-6 columns">
         <h4><a target="_blank" rel="noopener noreferrer" href="https://meritprepacademy.org">Merit Academy</a></h4>
-        <p>Computer Science and Jazz Band Teacher <span className="text-xs padding-left-1">(Summer 2018 - now)</span></p>
+        <p>Computer Science and Jazz Band Teacher <br className="hide-for-medium" /><span className="text-xs padding-left-1">(Summer 2018 - now)</span></p>
         <ul>
           <li><b>CTE Department Chair</b> (1 year)</li>
           <li>Began the school's <b>TSA Chapter</b>, serving as Chapter Leader.</li>
@@ -56,7 +55,7 @@ const TeacherPositions = () => (
       </div>
       <div className="small-12 medium-6 columns">
         <h4><a target="_blank" rel="noopener noreferrer" href="https://www.uvu.edu/partnership/prep/">UVU Prep</a></h4>
-        <p>Summer Computer Science Teacher <span className="text-xs padding-left-1">(Summer 2019 - now)</span></p>
+        <p>Summer Computer Science Teacher <br className="hide-for-medium" /><span className="text-xs padding-left-1">(Summer 2019 - now)</span></p>
         <ul>
           <li>Former experience in program as a Physics TA, <b>asked to come back</b> as a full-time teacher.</li>
           <li>Took existing curriculum and <b>adapted lessons</b> to the situation.</li>
@@ -87,7 +86,8 @@ const TimelineItem = props => {
 
 const TeacherTimeline = () => (
   <div className="timeline">
-    <h3 class="accent-text text-left margin-bottom-1">Timeline</h3>
+    <h3 className="accent-text text-left margin-bottom-1 show-for-medium">Timeline</h3>
+    <h3 className="accent-text text-center margin-bottom-1 hide-for-medium">Timeline</h3>
 
     <TimelineItem
       right
