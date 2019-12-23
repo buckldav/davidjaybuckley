@@ -7,7 +7,7 @@ const MusicGrid = props => (
       <iframe title="soundcloud" width="100%" height="400" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/4766862&amp;color=%234b3f72&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=false"></iframe>      
       <div className="callout">
         <h5 className="subheading">Production</h5>
-        <p>I'm just another introverted music theory nut who produces stuff out of the bedroom and chucks it up on Soundcloud. 
+        <p>I'm just another introverted music theory nut who produces stuff out of the bedroom and chucks it up on SoundCloud. 
         I track live bass, guitar, and keys for people.</p>
       </div>
     </div>
@@ -88,7 +88,7 @@ const Musician = () => (
     <Contact 
       subject="Musician"
       placeholder="Tell me an obscure 70's band"
-      message="Get in touch with me if you'd like to know more about music, production, or best of all, hire me for a gig!"
+      message="Get in touch with me if you'd like to know more about music, arrangement commissioning, production, or best of all, hire me for a gig!"
       button2={<a target="_blank" rel="noopener noreferrer" href="https://soundcloud.com/buckldav">SoundCloud</a>}
     />
   </main>

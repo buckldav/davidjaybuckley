@@ -8,15 +8,15 @@ const SpringMicro = {
   link: <a href="https://springmicro.com">springmicro.com</a>,
   header: <>SpringMicro</>, 
   tech: <>
-          <i className={iconClasses("devicon-django-plain")}></i><i className={iconClasses("devicon-bootstrap-plain-wordmark")}></i>
+          <i className={iconClasses("devicon-django-plain")}></i><i className={iconClasses("devicon-nginx-original")}></i>
+          <i className={iconClasses("devicon-postgresql-plain-wordmark")}></i><i className={iconClasses("devicon-bootstrap-plain-wordmark")}></i>
           <i className={iconClasses("devicon-sass-original")}></i><i className={iconClasses("devicon-jquery-plain-wordmark")}></i>
-          <i className={iconClasses("devicon-nginx-original")}></i><i className={iconClasses("devicon-bitbucket-plain-wordmark")}></i>
         </>,
   summary: <>SpringMicro is a web hosting and software solutions company. I built their site to allow users to purchase products and communicate with tech support.</>,
   features: [
     <li>User registration and login</li>,
     <li>Payment system; PayPal, credit card</li>,
-    <li>Data models, relational database using SQLite</li>,
+    <li>Data models, relational database using SQLite and PostgreSQL</li>,
     <li>Responsive design using Bootstrap and SCSS</li>,
     <li>Full stack development including REST API (Django Rest Framework)</li>,
   ]
