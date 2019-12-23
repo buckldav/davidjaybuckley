@@ -1,0 +1,4 @@
+  # Load index.html regardless of path
+/*    /index.html   200
+# Redirect default Netlify subdomain to primary domain
+# http://cranky-rosalind-902e6c.netlify.com/* https://www.davidjaybuckley.com/:splat 301!

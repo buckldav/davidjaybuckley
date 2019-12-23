@@ -17,5 +17,12 @@
   <body>
     <noscript>You need to enable JavaScript to view this site.</noscript>
     <div id="root" className="off-canvas-wrapper"></div>
+    <form style="display: none;" netlify-honeypot="bot-field" data-netlify="true" name="contact">
+      <input type="hidden" name="subject" />
+      <input type="text" name="name">
+      <input type="email" name="email">
+      <textarea name="message"></textarea>
+      <button type="submit">SEND</button>
+    </form>
   </body>
 </html>
