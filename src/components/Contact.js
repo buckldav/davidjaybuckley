@@ -10,7 +10,7 @@ const encode = (data) => {
 class ContactForm extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { name: "", email: "", message: "" };
+    this.state = { name: "", email: "", message: "", subject: props.subject };
   }
 
   /* Here’s the juicy bit for posting the form submission */
@@ -24,7 +24,7 @@ class ContactForm extends React.Component {
       .then(() => {
         alert("Email sent. Please allow 24 hours for a reply.")
       })
-      .catch(error => alert(error));
+      .catch(error => console.log(error));
 
     e.preventDefault();
   };
@@ -32,7 +32,7 @@ class ContactForm extends React.Component {
   handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
   render() {
-    const { name, email, message } = this.state;
+    const { name, email, message, subject } = this.state;
     const isDisabled = () => (
       name === "" || message === "" || !isEmail(email)
     )
@@ -42,7 +42,7 @@ class ContactForm extends React.Component {
           <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
           <label>
             Subject<br />
-            <input type="text" name="subject" value={this.props.subject} />
+            <input type="text" name="subject" readOnly value={subject} />
           </label>
         </p>
         <p>
