@@ -23,8 +23,6 @@ class ContactForm extends React.Component {
     })
       .then(() => {
         alert("Email sent. Please allow 24 hours for a reply.")
-        document.getElementById('myModal').style.display = "none";
-        document.getElementsByTagName("body")[0].style.overflowY = "auto";
       })
       .catch(error => alert(error));
 
@@ -42,8 +40,11 @@ class ContactForm extends React.Component {
       <form onSubmit={this.handleSubmit} netlify-honeypot="bot-field" data-netlify="true" name="contact">
         <p style={{display: "none"}}>
           <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+          <label>
+            Subject<br />
+            <input type="text" name="subject" value={this.props.subject} />
+          </label>
         </p>
-        <input type="hidden" name="subject" value={this.props.subject} />
         <p>
           <label>
             Name<br /> 

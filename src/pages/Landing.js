@@ -30,9 +30,9 @@ class Landing extends React.Component {
           <Logo />
           <h1 className="white-text">David Buckley</h1>
           <img className="hide-for-medium" src={window.location.origin + "/img/portrait.png"} width={200} alt="David Buckley" />
-          <h5><a href="/developer" className="white-text">Web Developer</a></h5>
-          <h5><a href="/musician" className="white-text">Jazz Musician</a></h5>
-          <h5><a href="/teacher" className="white-text">High School Teacher</a></h5>
+          <h5><a href="/developer" className="top-nav">Web Developer</a></h5>
+          <h5><a href="/musician" className="top-nav">Jazz Musician</a></h5>
+          <h5><a href="/teacher" className="top-nav">High School Teacher</a></h5>
         </section>
       </div>
     )

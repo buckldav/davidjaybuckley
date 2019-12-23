@@ -16,13 +16,13 @@ class Layout extends React.Component {
             <div className="grid-container">
               <br/>
               <img className="thumbnail" src={window.location.origin + "/img/portrait-uvu.jpg"} width="100%" alt="placeholder"/>
-              <h1 className="h5"><a className="white-text" href="/">David Buckley</a></h1>
+              <h1 className="h5"><a className="top-nav" href="/">David Buckley</a></h1>
               <p>Family Man.<br/>Lifetime Utahn.<br/>Ultimate Frisbee lover.<br/>Trying to do three careers at once.</p>
               <nav id="nav-links" className="grid-y">
                 <span className="text-xs">I am a...</span>
-                <a href="/developer">Web Developer</a>
-                <a href="/musician">Jazz Musician</a>
-                <a href="/teacher">High School Teacher</a>
+                <a className="top-nav" href="/developer">Web Developer</a>
+                <a className="top-nav" href="/musician">Jazz Musician</a>
+                <a className="top-nav" href="/teacher">High School Teacher</a>
               </nav>
             </div>
           </div>
@@ -30,7 +30,7 @@ class Layout extends React.Component {
             <div className="title-bar hide-for-large">
               <div className="title-bar-left">
                 <button className="menu-icon" type="button" data-open="my-info"></button>
-                <span className="title-bar-title padding-left-1">David Buckley</span>
+                <a className="title-bar-title padding-left-1 white-text" href="/">David Buckley</a>
               </div>
             </div>
             {this.props.children}

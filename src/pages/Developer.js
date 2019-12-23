@@ -75,7 +75,7 @@ const TheGuests = {
 
 const Portfolio = {
   imgPath: "/img/dev/this.png",
-  link: <a href="https://davidbuckley.me">davidbuckley.me</a>,
+  link: <a href="https://davidjaybuckley.com">davidjaybuckley.com</a>,
   header: <>My Portfolio</>, 
   tech: <>
           <i className={iconClasses("devicon-react-original-wordmark")}></i><i className={iconClasses("devicon-sass-original")}></i>
