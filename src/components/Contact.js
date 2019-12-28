@@ -1,7 +1,5 @@
 import React from 'react'
 import isEmail from 'validator/lib/isEmail';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone, faEnvelope, faLink } from '@fortawesome/free-solid-svg-icons';
 
 const encode = (data) => {
   return Object.keys(data)
