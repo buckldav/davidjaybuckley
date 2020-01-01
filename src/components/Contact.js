@@ -91,7 +91,7 @@ const Contact = props => (
         />
       </div>
     </div>
-    <h6 className="subheader text-center margin-vertical-2">&copy; David Buckley 2019</h6>
+    <h6 className="subheader text-center margin-vertical-2">&copy; David Buckley 2020</h6>
   </section>
 )
 

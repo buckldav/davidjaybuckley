@@ -9,6 +9,7 @@ import Teacher from './pages/Teacher';
 import Layout from './components/Layout';
 import MusicLessons from './pages/music/Lessons';
 import MusicArrangements from './pages/music/Arrangements';
+import Error404 from './pages/Error404';
 
 const RouteWithLayout = ({layout, component, ...rest}) => (
   <Route {...rest} render={(props) =>
@@ -27,6 +28,7 @@ function App() {
         <RouteWithLayout layout={Layout} exact path="/musician" component={Musician} />
         <RouteWithLayout layout={Layout} exact path="/music/lessons" component={MusicLessons} />
         <RouteWithLayout layout={Layout} exact path="/music/arrangements" component={MusicArrangements} />
+        <Route path="" component={Error404} />
       </Switch>
     </BrowserRouter>
   );
