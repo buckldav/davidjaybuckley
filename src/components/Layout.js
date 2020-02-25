@@ -15,7 +15,7 @@ class Layout extends React.Component {
           <div className="off-canvas position-left reveal-for-large" id="my-info" data-off-canvas data-position="left">
             <div className="grid-container">
               <br/>
-              <img className="thumbnail" src={window.location.origin + "/img/portrait-uvu.jpg"} width="100%" alt="placeholder"/>
+              <img className="thumbnail" src={window.location.origin + "/img/portrait-uvu.jpg"} alt="David Jay Buckley"/>
               <h1 className="h5"><a className="top-nav" href="/">David Buckley</a></h1>
               <p>Family Man.<br/>Lifetime Utahn.<br/>Ultimate Frisbee lover.<br/>Trying to do three careers at once.</p>
               <nav id="nav-links" className="grid-y">
