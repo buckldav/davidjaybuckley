@@ -5,27 +5,30 @@ class Landing extends React.Component {
   state = {
     animateClass: "",
     animateDone: false,
-    imgDisplay: {display: "none"}
+    display: {display: "none"}
   }
 
   animationEndStyle() {
     this.setState({animateClass: " slant-animation-after"});
   }
 
-  componentDidMount() {
+  componentDidMount() {}
+
+  onImgLoad() {
     if (!this.state.animateDone) {
       this.setState({
         animateClass: " slant-animation-auto",
-        animateDone: true
+        animateDone: true,
+        display: {}
       });
     }
   }
   
   render() {
     return (
-      <div id="top" className={"flex" + this.state.animateClass} onAnimationEnd={this.animationEndStyle.bind(this)}>
+      <div id="top" className={"flex" + this.state.animateClass} onAnimationEnd={this.animationEndStyle.bind(this)} style={this.state.display}>
         <section className="col-2 center-h">
-          <img src={window.location.origin + "/img/portrait.png"} width={300} alt="David Buckley" style={this.state.imgDisplay} onLoad={() => this.setState({imgDisplay: {}})} />
+          <img src={window.location.origin + "/img/portrait.png"} width={300} alt="David Buckley" onLoad={this.onImgLoad.bind(this)} />
         </section>
         <section className="col-3 center-h">
           <Logo />
