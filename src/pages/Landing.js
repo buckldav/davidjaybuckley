@@ -4,7 +4,8 @@ import Logo from '../components/Logo';
 class Landing extends React.Component {
   state = {
     animateClass: "",
-    animateDone: false
+    animateDone: false,
+    imgDisplay: {display: "none"}
   }
 
   animationEndStyle() {
@@ -24,7 +25,7 @@ class Landing extends React.Component {
     return (
       <div id="top" className={"flex" + this.state.animateClass} onAnimationEnd={this.animationEndStyle.bind(this)}>
         <section className="col-2 center-h">
-          <img src={window.location.origin + "/img/portrait.png"} width={300} alt="David Buckley" />
+          <img src={window.location.origin + "/img/portrait.png"} width={300} alt="David Buckley" style={this.state.imgDisplay} onLoad={() => this.setState({imgDisplay: {}})} />
         </section>
         <section className="col-3 center-h">
           <Logo />
