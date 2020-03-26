@@ -26,7 +26,6 @@ function App() {
         <RouteWithLayout layout={Layout} exact path="/developer" component={Developer} />
         <RouteWithLayout layout={Layout} exact path="/teacher" component={Teacher} />
         <RouteWithLayout layout={Layout} exact path="/musician" component={Musician} />
-        <RouteWithLayout layout={Layout} exact path="/music/lessons" component={MusicLessons} />
         <RouteWithLayout layout={Layout} exact path="/music/arrangements" component={MusicArrangements} />
         <Route path="" component={Error404} />
       </Switch>

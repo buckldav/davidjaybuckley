@@ -5,4 +5,4 @@
 http://jolly-northcutt-8dbaed.netlify.com/* https://www.davidjaybuckley.com/:splat 301!
 
 # Redirect Music Lessons to GitBooks
-https://www.davidjaybuckley.com/music/lessons https://music.davidjaybuckley.com 301!
+https://*.davidjaybuckley.com/music/lessons https://music.davidjaybuckley.com 301!
