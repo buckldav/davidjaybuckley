@@ -77,7 +77,7 @@ const Musician = () => (
       </div>
     </section>
     <nav className="grid-container padding-vertical-1">
-      <a href="/music/lessons" className="padding-right-1">Lessons</a>
+      <a href="https://music.davidjaybuckley.com" className="padding-right-1">Lessons</a>
       <a href="/music/arrangements" className="padding-right-1">Arrangements</a>
       <a href="/musician#contact" className="padding-right-1">Hire Me</a>
     </nav>

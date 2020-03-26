@@ -1,4 +1,8 @@
-  # Load index.html regardless of path
+# Load index.html regardless of path
 /*    /index.html   200
+
 # Redirect default Netlify subdomain to primary domain
 http://jolly-northcutt-8dbaed.netlify.com/* https://www.davidjaybuckley.com/:splat 301!
+
+# Redirect Music Lessons to GitBooks
+https://www.davidjaybuckley.com/music/lessons https://music.davidjaybuckley.com 301!
