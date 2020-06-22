@@ -45,8 +45,9 @@ const TeacherPositions = () => (
         <h4><a target="_blank" rel="noopener noreferrer" href="https://meritprepacademy.org">Merit Academy</a></h4>
         <p>Computer Science and Jazz Band Teacher <br className="hide-for-medium" /><span className="text-xs padding-left-1">(Summer 2018 - now)</span></p>
         <ul>
-          <li><b>CTE Department Chair</b> (1 year)</li>
-          <li>Began the school's <b>TSA Chapter</b>, serving as Chapter Leader.</li>
+          <li><b>CTE Department Chair</b> (2 years).</li>
+          <li><b>Cross Country Coach</b> (1 year).</li>
+          <li>Began the school's <b>TSA Chapter</b>, serving as Chapter Leader (3 years).</li>
           <li>Began the <b>band program from scratch</b>, now over 20 students enrolled in band.</li>
           <li>Began the <b>computer science program from scratch</b>, now 9 varieties of CS courses offered.</li>
           <li><b>100% pass rate</b> for AP CS A and AP CS Principles.</li>

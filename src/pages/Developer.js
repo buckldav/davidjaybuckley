@@ -8,16 +8,16 @@ const SpringMicro = {
   link: <a href="https://springmicro.com">springmicro.com</a>,
   header: <>SpringMicro</>, 
   tech: <>
-          <i className={iconClasses("devicon-django-plain")}></i><i className={iconClasses("devicon-nginx-original")}></i>
-          <i className={iconClasses("devicon-postgresql-plain-wordmark")}></i><i className={iconClasses("devicon-bootstrap-plain-wordmark")}></i>
-          <i className={iconClasses("devicon-sass-original")}></i><i className={iconClasses("devicon-jquery-plain-wordmark")}></i>
+          <i className={iconClasses("devicon-django-plain")}></i><i className={iconClasses("devicon-postgresql-plain-wordmark")}></i>
+          <i className={iconClasses("devicon-bootstrap-plain-wordmark")}></i><i className={iconClasses("devicon-sass-original")}></i>
+          <i className={iconClasses("devicon-jquery-plain-wordmark")}></i><i className={iconClasses("devicon-webpack-plain")}></i>
         </>,
-  summary: <>SpringMicro is a web hosting and software solutions company. I built their site to allow users to purchase products and communicate with tech support.</>,
+  summary: <>SpringMicro is a web hosting and software solutions company. I built and maintain their site to allow users to purchase products, manage hosting plans, and communicate with tech support.</>,
   features: [
-    <li>User registration and login</li>,
-    <li>Payment system; PayPal, credit card</li>,
-    <li>Data models, relational database using SQLite and PostgreSQL</li>,
-    <li>Responsive design using Bootstrap and SCSS</li>,
+    <li>User registration and login system</li>,
+    <li>PCI compliant credit card transaction system design and implementation</li>,
+    <li>Relational database design and implementation using PostgreSQL</li>,
+    <li>Responsive design using Bootstrap and SCSS, Webpack for JS</li>,
     <li>Full stack development including REST API (Django Rest Framework)</li>,
   ]
 }
@@ -34,7 +34,7 @@ const MeritAcademy = {
   summary: <>This is a classroom site for the high school classes I teach. I configured Django's admin interface to help me add assignments and events. I also host student projects including WebGL games.</>,
   features: [
     <li>React.js + REST API + Django + Heroku</li>,
-    <li>Data models, relational database using PostgreSQL</li>,
+    <li>Relational database design and implementation using PostgreSQL</li>,
     <li>Responsive design using <a target="_blank" rel="noopener noreferrer" href="https://ant.design">ant.design</a> and .less variables</li>,
   ]
 }
@@ -58,7 +58,7 @@ const HandMeDown = {
 
 const TheGuests = {
   imgPath: "/img/dev/theguests.png",
-  link: <a href="https://theguests.band">theguests.band</a>,
+  link: <a href="https://sharp-swartz-29ae88.netlify.app/">theguests.band</a>,
   header: <>The Guests</>, 
   tech: <>
           <i className={iconClasses("devicon-react-original-wordmark")}></i><i className={iconClasses("devicon-jquery-plain-wordmark")}></i>
