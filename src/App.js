@@ -7,7 +7,7 @@ import Developer from './pages/Developer';
 import Musician from './pages/Musician';
 import Teacher from './pages/Teacher';
 import Layout from './components/Layout';
-import MusicLessons from './pages/music/Lessons';
+// import MusicLessons from './pages/music/Lessons';
 import MusicArrangements from './pages/music/Arrangements';
 import Error404 from './pages/Error404';
 

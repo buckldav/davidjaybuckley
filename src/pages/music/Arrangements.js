@@ -29,6 +29,11 @@ const MuseScoreURLs = [
     "url": "https://musescore.com/user/30979026/scores/5901974/s/As2-ys"
   },
   {
+    "title": "This Christmas",
+    "embed": "https://musescore.com/user/30979026/scores/6277403/embed",
+    "url": "https://musescore.com/user/30979026/scores/6277403/s/As2-ys"
+  },
+  {
     "title": "Where Are You Christmas",
     "embed": "https://musescore.com/user/30979026/scores/5901921/embed",
     "url": "https://musescore.com/user/30979026/scores/5901921/s/As2-ys"
