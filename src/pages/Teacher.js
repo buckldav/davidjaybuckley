@@ -1,7 +1,7 @@
 import React from 'react'
 import Contact from '../components/Contact'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCode, faGraduationCap, faGlobeAsia, faBolt, faHandsHelping, faFlask, faRunning, faUsers, faFire, faSchool, faUserGraduate, faChalkboardTeacher, faGuitar, faUniversity, faCertificate, faListUl } from '@fortawesome/free-solid-svg-icons'
+import { faBriefcase, faCode, faGraduationCap, faGlobeAsia, faBolt, faHandsHelping, faFlask, faRunning, faUsers, faFire, faSchool, faUserGraduate, faChalkboardTeacher, faGuitar, faUniversity, faCertificate, faListUl } from '@fortawesome/free-solid-svg-icons'
 
 const TeacherSkills = () => (
   <div className="text-center">
@@ -104,7 +104,7 @@ const TeacherTimeline = () => (
     <TimelineItem
       month="june"
       year={2020} 
-      icon={<FontAwesomeIcon icon={faRunning} />}
+      icon={<FontAwesomeIcon icon={faBriefcase} />}
       content={<>
         Was able to help several graduating high school students get jobs and <a target="_blank" rel="noopener noreferrer" href="https://www.testout.com/certification/pro-exams/pc-pro">industry certifications</a> in computer science straight out of high school. 
         One was even able to qualify to be my TA at UVU Prep, a position usually reserved for more seasoned college students.
