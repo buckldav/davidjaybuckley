@@ -79,7 +79,7 @@ class MusicArrangements extends React.Component {
         </section>
         <nav className="grid-container padding-vertical-1">
           <a href="/musician" className="padding-right-1">Music Home</a>
-          <a href="/music/lessons" className="padding-right-1">Lessons</a>
+          <a href="https://music.davidjaybuckley.com/lessons" className="padding-right-1">Lessons</a>
           <a href="/music/arrangements#contact" className="padding-right-1">Hire Me</a>
         </nav>
         <section className="grid-container margin-vertical-1">
