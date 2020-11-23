@@ -10,14 +10,15 @@ const SpringMicro = {
   tech: <>
           <i className={iconClasses("devicon-django-plain")}></i><i className={iconClasses("devicon-postgresql-plain-wordmark")}></i>
           <i className={iconClasses("devicon-bootstrap-plain-wordmark")}></i><i className={iconClasses("devicon-sass-original")}></i>
-          <i className={iconClasses("devicon-jquery-plain-wordmark")}></i><i className={iconClasses("devicon-webpack-plain")}></i>
+          <i className={iconClasses("devicon-react-original")}></i><i className={iconClasses("devicon-webpack-plain")}></i>
         </>,
   summary: <>SpringMicro is a web hosting and software solutions company. I built and maintain their site to allow users to purchase products, manage hosting plans, and communicate with tech support.</>,
   features: [
     <li>User registration and login system</li>,
     <li>PCI compliant credit card transaction system design and implementation</li>,
     <li>Relational database design and implementation using PostgreSQL</li>,
-    <li>Responsive design using Bootstrap and SCSS, Webpack for JS</li>,
+    <li>Custom Webpack, React, and NextJS configurations</li>,
+    <li>Responsive design using Bootstrap and SCSS</li>,
     <li>Full stack development including REST API (Django Rest Framework)</li>,
   ]
 }

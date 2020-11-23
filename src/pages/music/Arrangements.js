@@ -4,9 +4,24 @@ import Contact from '../../components/Contact'
 const MuseScoreUser = "buckldav";
 const MuseScoreURLs = [
   {
+    "title": "Blue Christmas",
+    "embed": "https://musescore.com/user/30979026/scores/6399167/embed",
+    "url": "https://musescore.com/user/30979026/scores/6399167/s/_zAG0T"
+  },
+  {
+    "title": "Christmas Time is Here",
+    "embed": "https://musescore.com/user/30979026/scores/6405241/embed",
+    "url": "https://musescore.com/user/30979026/scores/6405241/s/6VxR4a"
+  },
+  {
     "title": "Let It Snow",
     "embed": "https://musescore.com/user/30979026/scores/5901967/embed",
     "url": "https://musescore.com/user/30979026/scores/5901967/s/As2-ys"
+  },
+  {
+    "title": "Sesame Street",
+    "embed": "https://musescore.com/user/30979026/scores/6465423/embed",
+    "url": "https://musescore.com/user/30979026/scores/6465423/s/48AEQR"
   },
   {
     "title": "Spooky Scary Skeletons",

@@ -1,7 +1,7 @@
 import React from 'react'
 import Contact from '../components/Contact'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCode, faGraduationCap, faGlobeAsia, faBolt, faHandsHelping, faFlask, faUsers, faFire, faSchool, faUserGraduate, faChalkboardTeacher, faGuitar, faUniversity, faCertificate, faListUl } from '@fortawesome/free-solid-svg-icons'
+import { faCode, faGraduationCap, faGlobeAsia, faBolt, faHandsHelping, faFlask, faRunning, faUsers, faFire, faSchool, faUserGraduate, faChalkboardTeacher, faGuitar, faUniversity, faCertificate, faListUl } from '@fortawesome/free-solid-svg-icons'
 
 const TeacherSkills = () => (
   <div className="text-center">
@@ -42,7 +42,7 @@ const TeacherPositions = () => (
     <h3 className="accent-text text-left margin-bottom-1">Current Positions</h3>
     <div className="grid-x grid-x-margin">
       <div className="small-12 medium-6 columns">
-        <h4><a target="_blank" rel="noopener noreferrer" href="https://meritprepacademy.org">Merit Academy</a></h4>
+        <h4><a target="_blank" rel="noopener noreferrer" href="https://meritprepacademy.org">Merit Preparatory Academy</a></h4>
         <p>Computer Science and Jazz Band Teacher <br className="hide-for-medium" /><span className="text-xs padding-left-1">(Summer 2018 - now)</span></p>
         <ul>
           <li><b>CTE Department Chair</b> (2 years).</li>
@@ -50,7 +50,7 @@ const TeacherPositions = () => (
           <li>Began the school's <b>TSA Chapter</b>, serving as Chapter Leader (3 years).</li>
           <li>Began the <b>band program from scratch</b>, now over 20 students enrolled in band.</li>
           <li>Began the <b>computer science program from scratch</b>, now 9 varieties of CS courses offered.</li>
-          <li><b>100% pass rate</b> for AP CS A and AP CS Principles.</li>
+          <li><b>80% pass rate</b> for AP CS A and AP CS Principles.</li>
           <li>Learn more about my programs at <a target="_blank" rel="noopener noreferrer" href="https://meritacademy.tech">meritacademy.tech</a>.</li>
         </ul>
       </div>
@@ -89,6 +89,27 @@ const TeacherTimeline = () => (
   <div className="timeline">
     <h3 className="accent-text text-left margin-bottom-1 show-for-medium">Timeline</h3>
     <h3 className="accent-text text-center margin-bottom-1 hide-for-medium">Timeline</h3>
+
+    <TimelineItem
+      right
+      month="october"
+      year={2020} 
+      icon={<FontAwesomeIcon icon={faRunning} />}
+      content={<>
+        In the first year of coaching <a target="_blank" rel="noopener noreferrer" href="https://xc.meritacademy.tech">Cross Country at Merit</a>, I took both the boys and girls teams to state for the first time in school history.
+        The girls also finished a <a target="_blank" rel="noopener noreferrer" href="https://meritprepacademy.org/2020/09/16/crosscountry_dominates/">dominate season</a> by winning region while the boys came in second.
+      </>} 
+    />
+
+    <TimelineItem
+      month="june"
+      year={2020} 
+      icon={<FontAwesomeIcon icon={faRunning} />}
+      content={<>
+        Was able to help several graduating high school students get jobs and <a target="_blank" rel="noopener noreferrer" href="https://www.testout.com/certification/pro-exams/pc-pro">industry certifications</a> in computer science straight out of high school. 
+        One was even able to qualify to be my TA at UVU Prep, a position usually reserved for more seasoned college students.
+      </>} 
+    />
 
     <TimelineItem
       right
@@ -137,7 +158,7 @@ const TeacherTimeline = () => (
       content={<>
         I student taught twice. First at <a target="_blank" rel="noopener noreferrer" href="https://ths.alpineschools.org/">Timpanogos High School</a> under Clint Goldman 
         teaching physics, second at <a target="_blank" rel="noopener noreferrer" href="https://pghs.alpineschools.org/">Pleasant Grove High School</a> under Audra Yocom teaching computer science. 
-        It was actually kind of a nightmare to organize all of that.
+        As teaching Computer Science was still novel, I organized my student teaching myself.
       </>} 
     />
 
@@ -154,7 +175,8 @@ const TeacherTimeline = () => (
       year={2017} 
       icon={<FontAwesomeIcon icon={faFlask} />}
       content={<>
-        As a Research Assistant at BYU, I developed numerical models and MATLAB software that simulated the motion of <a target="_blank" rel="noopener noreferrer" href="http://www.physics.usyd.edu.au/~wheat/slinky/">Slinkys</a>.  
+        As a Research Assistant at BYU, I developed numerical models and MATLAB software that simulated the motion of Slinkys. 
+        I even won a <a target="_blank" rel="noopener noreferrer" href="https://www.cpms.byu.edu/2017-src-session-winners/">prize</a> for my presentation about it.  
       </>} 
     />
 
