@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import React, { useState } from 'react'
 import Contact from '../components/Contact'
 import dynamic from 'next/dynamic';
@@ -83,9 +84,9 @@ const MusicArrangements = () => {
           </div>
         </section>
         <nav className="grid-container padding-vertical-1">
-          <a href="/musician" className="padding-right-1">Music Home</a>
+          <Link href="/musician"><a className="padding-right-1">Music Home</a></Link>
           <a href="https://music.davidjaybuckley.com/lessons" className="padding-right-1">Lessons</a>
-          <a href="/music/arrangements#contact" className="padding-right-1">Hire Me</a>
+          <a href="/arrangements#contact" className="padding-right-1">Hire Me</a>
         </nav>
         <section className="grid-container margin-vertical-1">
           <div className="grid-y">

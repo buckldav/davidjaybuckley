@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import React from 'react';
 import dynamic from "next/dynamic";
 import Logo from "../components/Logo";
@@ -16,9 +17,9 @@ const Index = props => {
         <Logo />
         <h1 className="white-text">David Buckley</h1>
         <img className="hide-for-medium" src="/img/portrait.png" width={200} alt="David Buckley" />
-        <h5><a href="/developer" className="top-nav">Full Stack Developer</a></h5>
-        <h5><a href="/musician" className="top-nav">Jazz Musician</a></h5>
-        <h5><a href="/teacher" className="top-nav">High School Teacher</a></h5>
+        <h5><Link href="/developer"><a className="top-nav">Full Stack Developer</a></Link></h5>
+        <h5><Link href="/musician"><a className="top-nav">Jazz Musician</a></Link></h5>
+        <h5><Link href="/teacher"><a className="top-nav">High School Teacher</a></Link></h5>
       </section>
     </Landing>
   )

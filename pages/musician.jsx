@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import React from 'react'
 import Contact from '../components/Contact'
 import dynamic from 'next/dynamic';
@@ -57,7 +58,7 @@ const MusicGrid = props => (
         <p>I've been writing and arranging songs for over ten years now and I've learned a lot along the way. 
         I love making big band arrangements and teaching Jazz Band at Merit Academy lets me arrange tunes frequently. 
         I also make arrangements for choirs and ensembles, especially for religious performances.
-        Check out my arrangements <a href="/music/arrangements">here</a>.</p>
+        Check out my arrangements <Link href="/arrangements"><a>here</a></Link>.</p>
       </div>
     </div>
     <div className="masonry-css-item">
@@ -87,7 +88,7 @@ const Musician = () => (
       </section>
       <nav className="grid-container padding-vertical-1">
         <a href="https://music.davidjaybuckley.com/lessons" className="padding-right-1">Lessons</a>
-        <a href="/arrangements" className="padding-right-1">Arrangements</a>
+        <Link href="/arrangements"><a className="padding-right-1">Arrangements</a></Link>
         <a href="/musician#contact" className="padding-right-1">Hire Me</a>
       </nav>
       <section className="grid-container margin-vertical-1">

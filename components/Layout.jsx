@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React, { useEffect } from 'react'
 import $ from 'jquery'
 import 'foundation-sites'
@@ -19,9 +20,9 @@ const Layout = props => {
             <p>Family Man.<br/>Lifetime Utahn.<br/>Ultimate Frisbee lover.<br/>Trying to do three careers at once.</p>
             <nav id="nav-links" className="grid-y">
               <span className="text-xs">I am a...</span>
-              <a className="top-nav" href="/developer">Full Stack Developer</a>
-              <a className="top-nav" href="/musician">Jazz Musician</a>
-              <a className="top-nav" href="/teacher">High School Teacher</a>
+              <Link href="/developer"><a className="top-nav">Full Stack Developer</a></Link>
+              <Link href="/musician"><a className="top-nav">Jazz Musician</a></Link>
+              <Link href="/teacher"><a className="top-nav">High School Teacher</a></Link>
               <a className="top-nav margin-top-1" href={window.location.href.split("#")[0] + "#contact"}>Contact Me</a>
             </nav>
           </div>
