@@ -1,5 +1,10 @@
+import Head from 'next/Head';
 import React from 'react'
 import Contact from '../components/Contact'
+import dynamic from 'next/dynamic';
+const Layout = dynamic(() => import('../components/Layout'), {
+  ssr: false
+});
 
 const iconClasses = icon => (icon + " cell small-2 medium-4 large-auto padding-vertical-1 text-center")
 
@@ -97,7 +102,7 @@ const AppFeature = props => (
     <div className="grid-x grid-margin-x">
       <div className="cell small-12 medium-4 show-for-medium">
         <div className="grid-container full">
-          <img className="shadow" src={window.location.origin + props.data.imgPath} alt={props.data.header} />
+          <img className="shadow" src={props.data.imgPath} alt={props.data.header} />
           <div className="grid-x">{props.data.tech}</div>
         </div>
       </div>
@@ -106,7 +111,7 @@ const AppFeature = props => (
         <h4>{props.data.link}</h4>
         <h3 className="accent-text">{props.data.header}</h3>
         <div className="grid-container full">
-          <img className="shadow hide-for-medium" src={window.location.origin + props.data.imgPath} alt={props.data.header} />
+          <img className="shadow hide-for-medium" src={props.data.imgPath} alt={props.data.header} />
           <div className="grid-x hide-for-medium">{props.data.tech}</div>
           <div className="grid-x">
             <div className="cell small-12 medium-6 app-detail-padding">
@@ -127,29 +132,34 @@ const AppFeature = props => (
 )
 
 const Developer = () => (
-  <main role="main" id="developer">
-    <section className="grid-container margin-vertical-1">
-      <div className="grid-x grid-margin-x">
-        <div className="cell small-12">
-          <h1 className="accent-text">Web Developer</h1>
-          <p>
-            <span>Django and React.js are pretty fun.</span>
-          </p>
+  <Layout>
+    <Head>
+      <title>David Buckley | Full Stack Developer</title>
+    </Head>
+    <main role="main" id="developer">
+      <section className="grid-container margin-vertical-1">
+        <div className="grid-x grid-margin-x">
+          <div className="cell small-12">
+            <h1 className="accent-text">Full Stack Developer</h1>
+            <p>
+              <span>Django and React.js are pretty fun.</span>
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
-    <AppFeature data={SpringMicro} />
-    <AppFeature data={MeritAcademy} />
-    <AppFeature data={HandMeDown} />
-    <AppFeature data={TheGuests} />
-    <AppFeature data={Portfolio} />
-    <hr/>
-    <Contact
-      subject="Development"
-      placeholder="Message"
-      message="Get in touch if you'd like to commission me for a site/app or ask any other questions."
-    />
-  </main>
+      </section>
+      <AppFeature data={SpringMicro} />
+      <AppFeature data={MeritAcademy} />
+      <AppFeature data={HandMeDown} />
+      <AppFeature data={TheGuests} />
+      <AppFeature data={Portfolio} />
+      <hr/>
+      <Contact
+        subject="Development"
+        placeholder="Message"
+        message="Get in touch if you'd like to commission me for a site/app or ask any other questions."
+      />
+    </main>
+  </Layout>
 )
 
 export default Developer

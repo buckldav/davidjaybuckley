@@ -1,7 +1,12 @@
+import Head from 'next/head'
 import React from 'react'
 import Contact from '../components/Contact'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBriefcase, faCode, faGraduationCap, faGlobeAsia, faBolt, faHandsHelping, faFlask, faRunning, faUsers, faFire, faSchool, faUserGraduate, faChalkboardTeacher, faGuitar, faUniversity, faCertificate, faListUl } from '@fortawesome/free-solid-svg-icons'
+import dynamic from 'next/dynamic';
+const Layout = dynamic(() => import('../components/Layout'), {
+  ssr: false
+});
 
 const TeacherSkills = () => (
   <div className="text-center">
@@ -232,33 +237,38 @@ const TeacherTimeline = () => (
 )
 
 const Teacher = () => (
-  <main role="main" id="teacher">
-    <section className="grid-container margin-top-1">
-      <div className="grid-x grid-margin-x">
-        <div className="cell small-12">
-          <h1 className="accent-text">Teacher</h1>
-          <p className="margin-0">
-            <span>I just want to share my knowledge and help others.</span>
-          </p>
+  <Layout>
+    <Head>
+      <title>David Buckley | High School Teacher</title>
+    </Head>
+    <main role="main" id="teacher">
+      <section className="grid-container margin-top-1">
+        <div className="grid-x grid-margin-x">
+          <div className="cell small-12">
+            <h1 className="accent-text">High School Teacher</h1>
+            <p className="margin-0">
+              <span>I just want to share my knowledge and help others.</span>
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
-    <section className="grid-container margin-vertical-1">
-      <TeacherSkills />
-    </section>
-    <section className="grid-container margin-vertical-1">
-      <TeacherPositions />
-    </section>
-    <section className="grid-container margin-vertical-1">
-      <TeacherTimeline />
-    </section>
-    <hr/>
-    <Contact
-      subject="Teacher"
-      placeholder="Ask me anything"
-      message="Get in touch with me about teaching, tutoring, or anything related."
-    />
-  </main>
+      </section>
+      <section className="grid-container margin-vertical-1">
+        <TeacherSkills />
+      </section>
+      <section className="grid-container margin-vertical-1">
+        <TeacherPositions />
+      </section>
+      <section className="grid-container margin-vertical-1">
+        <TeacherTimeline />
+      </section>
+      <hr/>
+      <Contact
+        subject="Teacher"
+        placeholder="Ask me anything"
+        message="Get in touch with me about teaching, tutoring, or anything related."
+      />
+    </main>
+  </Layout>
 )
 
 export default Teacher

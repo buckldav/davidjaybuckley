@@ -1,5 +1,10 @@
-import React from 'react'
-import Contact from '../../components/Contact'
+import Head from 'next/head'
+import React, { useState } from 'react'
+import Contact from '../components/Contact'
+import dynamic from 'next/dynamic';
+const Layout = dynamic(() => import('../components/Layout'), {
+  ssr: false
+});
 
 const MuseScoreUser = "buckldav";
 const MuseScoreURLs = [
@@ -55,17 +60,17 @@ const MuseScoreURLs = [
   }    
 ]
 
-class MusicArrangements extends React.Component {
-  state = {
-    score: MuseScoreURLs[0]
+const MusicArrangements = () => {
+  const [score, setScore] = useState(MuseScoreURLs[0])
+  const changeActiveScore = (e) => {
+    setScore(MuseScoreURLs[e.target.id])
   }
 
-  changeActiveScore = (e) => {
-    this.setState({score: MuseScoreURLs[e.target.id]})
-  }
-
-  render() {
-    return (
+  return (
+    <Layout>
+      <Head>
+        <title>David Buckley | Arrangements and Compositions</title>
+      </Head>
       <main role="main" id="musician">
         <section className="grid-container margin-top-1">
           <div className="grid-x grid-margin-x">
@@ -89,19 +94,19 @@ class MusicArrangements extends React.Component {
                 <h5>Arrangements by <a target="_blank" rel="noopener noreferrer" href={"https://musescore.com/"+MuseScoreUser}>{MuseScoreUser}</a></h5>
                 <ul>
                   {MuseScoreURLs.map((val, i) => (
-                    <li><button onClick={this.changeActiveScore} id={i} value={val.title} className="clear button padding-0 margin-0">{val.title}</button></li>
+                    <li key={i}><button onClick={changeActiveScore} id={i} value={val.title} className="clear button padding-0 margin-0">{val.title}</button></li>
                   ))}
                 </ul>
               </div>
               <div className="cell medium-6"> 
                 <p className="text-center">
                   Here are some of my most recent arrangements. I specialize in religious/Christmas and jazz arranging. 
-                  I charge around $15/part/minute for arrangements.<br/>Get in touch with me <a href="/music/arrangements#contact">here</a>!
+                  I charge around $15/part/minute for arrangements.<br/>Get in touch with me <a href="/arrangements#contact">here</a>!
                 </p>
               </div>
             </div>
-            <iframe title={this.state.score.title} width="100%" height="600" src={this.state.score.embed} frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe>
-            <span><a href={this.state.score.url} rel="noopener noreferrer" target="_blank">{this.state.score.title}</a> by <a href={"https://musescore.com/"+MuseScoreUser}>{MuseScoreUser}</a></span>
+            <iframe title={score.title} width="100%" height="600" src={score.embed} frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe>
+            <span><a href={score.url} rel="noopener noreferrer" target="_blank">{score.title}</a> by <a href={"https://musescore.com/"+MuseScoreUser}>{MuseScoreUser}</a></span>
           </div>
         </section>
         <hr/>
@@ -112,8 +117,8 @@ class MusicArrangements extends React.Component {
           button2={<a target="_blank" rel="noopener noreferrer" href="https://soundcloud.com/buckldav">SoundCloud</a>}
         />
       </main>
-    )
-  }
+    </Layout>
+  )
 }
 
 export default MusicArrangements
