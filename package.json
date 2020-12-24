@@ -3,7 +3,9 @@
   "version": "0.1.1",
   "private": true,
   "dependencies": {
-    "next": "^10.0.4"
+    "next": "^10.0.4",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
@@ -13,9 +15,7 @@
     "@fortawesome/react-fontawesome": "^0.1.7",
     "foundation-sites": "^6.5.3",
     "jquery": "^3.5.1",
-    "node-sass": "^4.14.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "node-sass": "^4.14.1",    
     "validator": "^12.1.0"
   },
   "scripts": {
