@@ -3,12 +3,6 @@
   "version": "0.1.1",
   "private": true,
   "dependencies": {
-    "next": "^9.5.4",
-    "next-on-netlify": "^2.6.3",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
-  },
-  "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
     "@fortawesome/free-brands-svg-icons": "^5.11.2",
     "@fortawesome/free-regular-svg-icons": "^5.11.2",
@@ -17,7 +11,11 @@
     "foundation-sites": "^6.5.3",
     "jquery": "^3.5.1",
     "node-sass": "^4.14.1",
-    "validator": "^12.1.0"
+    "validator": "^12.1.0",
+    "next": "^9.5.4",
+    "next-on-netlify": "^2.6.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "scripts": {
     "dev": "next dev",
