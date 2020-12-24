@@ -1,44 +1,27 @@
 {
-  "name": "davidjaybuckley",
-  "version": "0.1.1",
+  "name": "davidbuckley",
+  "version": "0.2.0",
   "private": true,
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.25",
-    "@fortawesome/free-brands-svg-icons": "^5.11.2",
-    "@fortawesome/free-regular-svg-icons": "^5.11.2",
-    "@fortawesome/free-solid-svg-icons": "^5.11.2",
-    "@fortawesome/react-fontawesome": "^0.1.7",
-    "foundation-sites": "^6.5.3",
-    "jquery": "^3.5.1",
-    "next": "^9.5.4",
-    "next-on-netlify": "^2.6.3",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "validator": "^12.1.0",
-    "webpack": "^5.11.0"
-  },
-  "devDependencies": {
-    "node-sass": "^4.14.1"
-  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "start": "next start",
     "postbuild": "next-on-netlify",
     "scss": "node-sass --watch scss -o public --output-style=compressed"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "foundation-sites": "^6.6.3",
+    "jquery": "^3.5.1",
+    "next": "10.0.4",
+    "next-on-netlify": "^2.6.3",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "validator": "^13.5.2"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "node-sass": "^5.0.0"
   }
 }

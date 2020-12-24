@@ -19,7 +19,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <meta charset="utf-8" />
+          <meta charSet="utf-8" />
           <link rel="icon" href="/img/favicon/favicon.ico" />
           <meta name="google-site-verification" content="i8VX5_urdZHJM-PvClpYg7vhpjOglRB77S2MT6UZQCY" />
           <meta name="theme-color" content="#274060" />
@@ -29,7 +29,6 @@ class MyDocument extends Document {
           />
           <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" />
           <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159039662-1"></script>
-          <link rel="stylesheet" href="./App.css" />
         </Head>
         <body>
           <Main />

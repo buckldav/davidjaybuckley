@@ -1,4 +1,4 @@
-import Head from 'next/Head';
+import Head from 'next/head';
 import React from 'react'
 import Contact from '../components/Contact'
 import dynamic from 'next/dynamic';
