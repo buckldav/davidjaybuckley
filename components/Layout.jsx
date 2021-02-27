@@ -16,13 +16,13 @@ const Layout = props => {
           <div className="grid-container">
             <br/>
             <img className="thumbnail" src={"/img/portrait-uvu.jpg"} alt="David Jay Buckley"/>
-            <h1 className="h5"><a className="top-nav" href="/">David Buckley</a></h1>
+            <h1 className="h5"><a className="top-nav" href="/" itemProp="givenName">David Buckley</a></h1>
             <p>Family Man.<br/>Lifetime Utahn.<br/>Ultimate Frisbee lover.<br/>Trying to do three careers at once.</p>
             <nav id="nav-links" className="grid-y">
               <span className="text-xs">I am a...</span>
-              <Link href="/developer"><a className="top-nav">Full Stack Developer</a></Link>
-              <Link href="/musician"><a className="top-nav">Jazz Musician</a></Link>
-              <Link href="/teacher"><a className="top-nav">High School Teacher</a></Link>
+              <Link href="/developer"><a className="top-nav" itemProp="jobTitle">Full Stack Developer</a></Link>
+              <Link href="/musician"><a className="top-nav" itemProp="jobTitle">Jazz Musician</a></Link>
+              <Link href="/teacher"><a className="top-nav" itemProp="jobTitle">High School Teacher</a></Link>
               <a className="top-nav margin-top-1" href={window.location.href.split("#")[0] + "#contact"}>Contact Me</a>
             </nav>
           </div>
@@ -31,7 +31,7 @@ const Layout = props => {
           <div className="title-bar hide-for-large">
             <div className="title-bar-left">
               <button className="menu-icon" type="button" data-open="my-info"></button>
-              <a className="title-bar-title padding-left-1 white-text" href="/">David Buckley</a>
+              <a className="title-bar-title padding-left-1 white-text" href="/" itemProp="givenName">David Buckley</a>
             </div>
           </div>
           {props.children}

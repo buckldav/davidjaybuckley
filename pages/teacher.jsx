@@ -15,17 +15,17 @@ const TeacherSkills = () => (
       <div className="small-12 medium-4 columns margin-bottom-2">
         <FontAwesomeIcon icon={faUniversity} />
         <h4>Education</h4>
-        <p className="h5">Brigham Young University<br/><span className="text-xs">April 2018</span></p>
-        <p className="margin-vertical-0">BS Physics Teaching<br/><span className="text-xs">GPA: 3.6, Academic Scholarship, Regents Scholarship</span></p>
-        <p className="margin-vertical-0">Computer Science Teaching Minor<br/><span className="text-xs">GPA: 3.95</span></p>
+        <p className="h5"><span itemProp="alumniOf">Brigham Young University</span><br/><span className="text-xs">April 2018</span></p>
+        <p className="margin-vertical-0"><span itemProp="hasCredential">BS Physics Teaching</span><br/><span className="text-xs">GPA: 3.6, Academic Scholarship, Regents Scholarship</span></p>
+        <p className="margin-vertical-0"><span itemProp="hasCredential">Computer Science Teaching Minor</span><br/><span className="text-xs">GPA: 3.95</span></p>
       </div>
       <div className="small-12 medium-4 columns margin-bottom-2">
         <FontAwesomeIcon icon={faCertificate} />
         <h4>USOE Endorsements</h4>
         <ul className="list-style-none">
-          <li>Secondary Education</li>
-          <li>Computer Science Level 2</li>
-          <li>Physics</li>
+          <li itemProp="hasCredential">Secondary Education</li>
+          <li itemProp="hasCredential">Computer Science Level 2</li>
+          <li itemProp="hasCredential">Physics</li>
         </ul>
       </div>
       <div className="small-12 medium-4 columns margin-bottom-2">
@@ -47,12 +47,12 @@ const TeacherPositions = () => (
     <h3 className="accent-text text-left margin-bottom-1">Current Positions</h3>
     <div className="grid-x grid-x-margin">
       <div className="small-12 medium-6 columns">
-        <h4><a target="_blank" rel="noopener noreferrer" href="https://meritprepacademy.org">Merit Preparatory Academy</a></h4>
+        <h4><a target="_blank" rel="noopener noreferrer" href="https://meritprepacademy.org" itemProp="worksFor">Merit Preparatory Academy</a></h4>
         <p>Computer Science and Jazz Band Teacher <br className="hide-for-medium" /><span className="text-xs padding-left-1">(Summer 2018 - now)</span></p>
         <ul>
-          <li><b>CTE Department Chair</b> (2 years).</li>
-          <li><b>Cross Country Coach</b> (1 year).</li>
-          <li>Began the school's <b>TSA Chapter</b>, serving as Chapter Leader (3 years).</li>
+          <li><b itemProp="jobTitle">CTE Department Chair</b> (2 years).</li>
+          <li><b itemProp="jobTitle">Cross Country Coach</b> (1 year).</li>
+          <li>Began the school's <b><span itemProp="affiliation">TSA</span> Chapter</b>, serving as Chapter Leader (3 years).</li>
           <li>Began the <b>band program from scratch</b>, now over 20 students enrolled in band.</li>
           <li>Began the <b>computer science program from scratch</b>, now 9 varieties of CS courses offered.</li>
           <li><b>80% pass rate</b> for AP CS A and AP CS Principles.</li>
@@ -60,7 +60,7 @@ const TeacherPositions = () => (
         </ul>
       </div>
       <div className="small-12 medium-6 columns">
-        <h4><a target="_blank" rel="noopener noreferrer" href="https://www.uvu.edu/partnership/prep/">UVU Prep</a></h4>
+        <h4><a target="_blank" rel="noopener noreferrer" href="https://www.uvu.edu/partnership/prep/" itemProp="worksFor">UVU Prep</a></h4>
         <p>Summer Computer Science Teacher <br className="hide-for-medium" /><span className="text-xs padding-left-1">(Summer 2019 - now)</span></p>
         <ul>
           <li>Former experience in program as a Physics TA, <b>asked to come back</b> as a full-time teacher.</li>

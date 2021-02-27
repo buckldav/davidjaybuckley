@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "postbuild": "next-on-netlify",
-    "scss": "node-sass --watch scss -o public --output-style=compressed"
+    "scss": "node-sass --watch scss -o styles --output-style=compressed"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",

@@ -30,7 +30,7 @@ class MyDocument extends Document {
           <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" />
           <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159039662-1"></script>
         </Head>
-        <body>
+        <body itemScope itemType="https://schema.org/Person">
           <Main />
           <NextScript />
         </body>
