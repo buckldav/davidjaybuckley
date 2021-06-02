@@ -22,7 +22,7 @@ const Index = props => {
         <h5><Link href="/musician"><a className="top-nav" itemProp="jobTitle">Jazz Musician</a></Link></h5>
         <p className="white-text">I play guitar, piano, and bass for jazz and R&amp;B groups around <span itemProp="workLocation">Provo, Utah</span>. Listen to some of my compositions and arrangments!</p>
         <h5><Link href="/teacher"><a className="top-nav" itemProp="jobTitle">High School Teacher</a></Link></h5>
-        <p className="white-text">I teach Computer Science and Jazz Band at <span itemProp="affiliation">Merit Prepatory Academy</span> in <span itemProp="workLocation">Springville, Utah</span>. I love helping youth develop their talents.</p>
+        <p className="white-text">I teach Computer Science and Jazz Band at <span itemProp="affiliation">Merit Preparatory Academy</span> in <span itemProp="workLocation">Springville, Utah</span>. I love helping youth develop their talents.</p>
       </section>
     </Landing>
   )
