@@ -45,6 +45,23 @@ const MeritAcademy = {
   ]
 }
 
+const GuitarApp = {
+  imgPath: "/img/dev/guitar.png",
+  link: <a href="https://guitar.dbuckley.dev">guitar.dbuckley.dev</a>,
+  header: <>Chord Builder App</>,
+  tech: <>
+          <i className={iconClasses("devicon-ionic-original")}></i><i className={iconClasses("devicon-react-original-wordmark")}></i>
+          <i className={iconClasses("devicon-firebase-plain")}></i><i className={iconClasses("devicon-typescript-plain")}></i>
+
+        </>,
+  summary: <>I made this app to help me teach jazz guitar. It fulfills my need to visually show how a few basic chord shapes can be modified and altered to make hundreds of jazz chords, allowing students to more easily recognize patterns.</>,
+  features: [
+    <li>Used <a href="https://github.com/konvajs/react-konva">React Konva</a> to dynamically draw chord shapes on a fretboard</li>,
+    <li>Used <a href="https://ionicframework.com/docs/react">Ionic React</a> to have one codebase for a site and mobile app</li>,
+    <li>Firebase static hosting</li>
+  ]
+}
+
 const HandMeDown = {
   imgPath: "/img/dev/hmde.png",
   link: <a href="https://handmedownexperience.com">handmedownexperience.com</a>,
@@ -84,7 +101,7 @@ const Portfolio = {
   link: <a href="https://davidjaybuckley.com">davidjaybuckley.com</a>,
   header: <>My Portfolio</>, 
   tech: <>
-          <i className={iconClasses("devicon-react-original-wordmark")}></i><i className={iconClasses("devicon-sass-original")}></i>
+          <i className={iconClasses("devicon-nextjs-plain-wordmark colored")}></i><i className={iconClasses("devicon-sass-original")}></i>
           <i className={iconClasses("devicon-foundation-plain-wordmark")}></i>
         </>,
   summary: <pre>
@@ -149,6 +166,7 @@ const Developer = () => (
       </section>
       <AppFeature data={SpringMicro} />
       <AppFeature data={MeritAcademy} />
+      <AppFeature data={GuitarApp} />
       <AppFeature data={HandMeDown} />
       <AppFeature data={TheGuests} />
       <AppFeature data={Portfolio} />

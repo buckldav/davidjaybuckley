@@ -27,7 +27,7 @@ class MyDocument extends Document {
             name="description"
             content="David Jay Buckley | Web Developer (django, React.js, sass), Jazz Musician (piano, guitar, bass, organ), High School Teacher (computer science, jazz band, private music lessons)"
           />
-          <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" />
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css" />
           <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159039662-1"></script>
         </Head>
         <body itemScope itemType="https://schema.org/Person">
