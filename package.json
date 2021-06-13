@@ -6,7 +6,6 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "postbuild": "next-on-netlify",
     "scss": "node-sass --watch scss -o styles --output-style=compressed"
   },
   "dependencies": {
