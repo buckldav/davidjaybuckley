@@ -24,25 +24,30 @@ const MuseScoreURLs = [
     "embed": "https://musescore.com/user/30979026/scores/5901967/embed",
     "url": "https://musescore.com/user/30979026/scores/5901967/s/As2-ys"
   },
-  {
-    "title": "Sesame Street",
-    "embed": "https://musescore.com/user/30979026/scores/6465423/embed",
-    "url": "https://musescore.com/user/30979026/scores/6465423/s/48AEQR"
-  },
-  {
-    "title": "Spooky Scary Skeletons",
-    "embed": "https://musescore.com/user/30979026/scores/5901926/embed",
-    "url": "https://musescore.com/user/30979026/scores/5901926/s/As2-ys"
-  },
+  // {
+  //   "title": "Sesame Street",
+  //   "embed": "https://musescore.com/user/30979026/scores/6465423/embed",
+  //   "url": "https://musescore.com/user/30979026/scores/6465423/s/48AEQR"
+  // },
+  // {
+  //   "title": "Spooky Scary Skeletons",
+  //   "embed": "https://musescore.com/user/30979026/scores/5901926/embed",
+  //   "url": "https://musescore.com/user/30979026/scores/5901926/s/As2-ys"
+  // },
   {
     "title": "O Come, O Come Emmanuel",
     "embed": "https://musescore.com/user/30979026/scores/5901958/embed",
     "url": "https://musescore.com/user/30979026/scores/5901958/s/As2-ys"
   },
+  // {
+  //   "title": "Stayin' Alive",
+  //   "embed": "https://musescore.com/user/30979026/scores/5901929/embed",
+  //   "url": "https://musescore.com/user/30979026/scores/5901929/s/As2-ys"
+  // },
   {
-    "title": "Stayin' Alive",
-    "embed": "https://musescore.com/user/30979026/scores/5901929/embed",
-    "url": "https://musescore.com/user/30979026/scores/5901929/s/As2-ys"
+    "title": "Santa Claus is Coming to Town",
+    "embed": "https://musescore.com/user/30979026/scores/7092626/embed",
+    "url": "https://musescore.com/user/30979026/scores/7092626/s/As2-ys"
   },
   {
     "title": "The Christmas Song",
@@ -92,7 +97,7 @@ const MusicArrangements = () => {
           <div className="grid-y">
             <div className="grid-x">
               <div className="cell medium-6 padding-left-1">
-                <h5>Arrangements by <a target="_blank" rel="noopener noreferrer" href={"https://musescore.com/"+MuseScoreUser}>{MuseScoreUser}</a></h5>
+                <h5>Holiday Arrangements by <a target="_blank" rel="noopener noreferrer" href={"https://musescore.com/"+MuseScoreUser}>{MuseScoreUser}</a></h5>
                 <ul>
                   {MuseScoreURLs.map((val, i) => (
                     <li key={i}><button onClick={changeActiveScore} id={i} value={val.title} className="clear button padding-0 margin-0">{val.title}</button></li>

@@ -32,6 +32,7 @@ const TeacherSkills = () => (
         <FontAwesomeIcon icon={faListUl} />
         <h4>Notables</h4>
         <ul className="list-style-none">
+          <li>2022 Utah Teacher of the Year Nominee</li>
           <li>5 years of experience teaching STEM</li>
           <li>2 years of experience teaching private music lessons</li>
           <li>Developed curricula for over 10 different courses</li>
