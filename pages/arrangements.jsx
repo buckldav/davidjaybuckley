@@ -90,22 +90,22 @@ const MusicArrangements = (props) => {
               I charge around $15/part/minute for arrangements.<br/>Get in touch with me <a href="/arrangements#contact">here</a>!
             </p>
 
-                <ul class="dropdown menu" data-dropdown-menu>
-                  <li>
-                    <a className="padding-left-0" href="#">Select Type of Arrangements</a>
-                    <ul class="menu" style={{width: 300}}>
-                      {Object.keys(MuseScoreSets).map(val => (
-                        <li><button className="clear button" onClick={() => { setMSSet(val); setScore(props.links[val][0]) }}>{val}</button></li>
-                      ))}
-                    </ul>
-                  </li>
-                </ul>
-                <h5>{MSSet} by <a target="_blank" rel="noopener noreferrer" href="https://musescore.com/buckldav">buckldav</a></h5>
-                <ul className="grid-x margin-0 margin-bottom-1">
-                  {props.links[MSSet]?.map((val, i) => (
-                    <li className="display-inline-block margin-left-1 margin-right-1" key={i}><button onClick={changeActiveScore} id={i} value={val.title} className="clear button padding-0 margin-0">{val.title}</button></li>
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li>
+                <a className="padding-left-0" href="#">Select Type of Arrangements</a>
+                <ul class="menu" style={{width: 300}}>
+                  {Object.keys(MuseScoreSets).map(val => (
+                    <li><button className="clear button" onClick={() => { setMSSet(val); setScore(props.links[val][0]) }}>{val}</button></li>
                   ))}
                 </ul>
+              </li>
+            </ul>
+            <h5>{MSSet} by <a target="_blank" rel="noopener noreferrer" href="https://musescore.com/buckldav">buckldav</a></h5>
+            <ul className="grid-x margin-0 margin-bottom-1">
+              {props.links[MSSet]?.map((val, i) => (
+                <li className="display-inline-block margin-left-1 margin-right-1" key={i}><button onClick={changeActiveScore} id={i} value={val.title} className="clear button padding-0 margin-0">{val.title}</button></li>
+              ))}
+            </ul>
 
             <iframe title={score.title} width="100%" height="600" src={score.embed} frameBorder="0" allow="autoplay; fullscreen"></iframe>
             <span><a href={score.url} rel="noopener noreferrer" target="_blank">{score.title}</a> by <a href="https://musescore.com/buckldav">buckldav</a></span>
